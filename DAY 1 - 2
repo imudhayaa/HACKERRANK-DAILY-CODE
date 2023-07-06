@@ -22,3 +22,18 @@ a=input()
 b=sorted(a)
 for i in b:
     print(i,end='')
+
+CODE:
+
+a=input()
+b=''
+c=''
+d=''
+for i in a:
+    if(i=='0'):
+        b=b+i
+    elif(i=='1'):
+        c=c+i
+    elif(i=='2'):
+        d=d+i
+print(b+c+d)
