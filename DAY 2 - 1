@@ -1,0 +1,25 @@
+Given an array and contains alphabets. print the count of the alphabets in alphabetical order in an dictionary format
+
+Input Format
+
+aaaeebbcc
+
+Constraints
+
+none
+
+Output Format
+
+{a:3,b:2,c:2,e:2}
+
+code solution:
+
+s = input()
+a = set(s)
+res = {}
+for i in a:
+    res[i] = s.count(i)
+c = str(dict(sorted(res.items())))
+d = c.replace("'","")
+e = d.replace(" ","")
+print(e)
